@@ -1,0 +1,351 @@
+
+ /* 
+    ....... CSS GLOBAL FOR ALL PAGES
+*/
+/*  fonts */
+@font-face {
+    src: url('../fonts/Rajdhani/Rajdhani-Medium.ttf');
+    font-family: 'Rajdhani-Medium';
+}
+
+@font-face {
+    src: url('../fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf');
+    font-family: 'SpaceGrotesk-Regular';
+}
+
+/*
+    ....... GLOBAL STYLE
+*/
+
+html {
+    color: white;
+    overflow-x: hidden;
+    font-size: 1.25vw;
+    font-family: 'Rajdhani-Medium';
+}
+
+/* DEFINE ALL FONTS */
+button {
+    font-family: 'Rajdhani-Medium';
+    font-size: 1.25em;
+}
+
+button span {
+    opacity: 1;
+}
+
+h1 {
+    font-family: 'Rajdhani-Medium';
+    font-size: 2.25em;
+}
+
+h2 {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 0.75em;
+    letter-spacing: 0,1875em;
+}
+
+.sous-titre {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 1.375em;
+}
+
+.text {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 0.75em;
+}
+
+.text-1 {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 1.125em;
+}
+
+.text-space-grotesk-head {
+    font-family: 'Rajdhani-Medium';
+    font-size: 0.875em;
+}
+
+.text-randjani-head {
+    font-family: 'Rajdhani-Medium';
+    font-size: 1.125em;
+
+}
+
+.margin-200 {
+    margin-top: 12.5em;
+}
+
+
+/*
+ ....... CSS GLOBAL
+ */
+html {
+    margin-top: 0px;
+}
+
+body {
+    margin-top: -0.625em;
+    background-color: black;
+    padding: 0em 6.375em;
+}
+
+/* 
+    ...... HEADER STYLE 
+*/
+#page-top h1 {
+    background-image: url('../images/logos/logohome.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10vw;
+    height: 5vw;
+    cursor: pointer;
+}
+
+header {
+    padding: 2em 6.375em 2em 6.375em;
+    border: 0.1875em solid rgba(188, 187, 189, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  
+    ....... NAV STYLE 
+*/
+nav {
+    float: right;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav a {
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+    margin-left: 0.625em;
+}
+
+nav a[class='active'] {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*
+    ........ STYLE FOR SECTION FOOTER 
+*/
+footer {
+    text-align: center;
+    padding: 12em 6.375em 3.125em 6.375em;
+    border: 0.1875em solid rgba(188, 187, 189, 0.2);
+    border-top: none;
+    border-bottom: none;
+}
+
+footer .text {
+    font-size: 0.75em;
+}
+
+footer .logos {
+    padding: 3.125em;
+}
+
+footer .logos ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .logos ul li {
+    padding: 1%;
+}
+
+.-ml-5 {
+    margin-left: -1.25em;
+}
+
+/* ...............................SIDEBAR */
+aside {
+    float: left;
+    position: fixed;
+    text-align: center;
+    right: 4.5vw;
+    bottom: 5vw;
+    z-index: 3;
+}
+
+aside img {
+    border: 1px solid transparent;
+    width: 8vw;
+    height: 4vw;
+}
+
+aside .social-network {
+    margin-top: 30%;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+
+/* ......... CONTENT STYLE */
+main {
+    border: 0.1875em solid rgba(188, 187, 189, 0.2);
+    padding: 1.25em;
+    border-bottom: none;
+}
+
+/* TEXT CENTER */
+.text-center {
+    text-align: center;
+}
+
+.hover-jaune-bataman:hover {
+    filter: invert(6%) sepia(85%) saturate(5811%) hue-rotate(6deg) brightness(87%) contrast(109%);
+}
+
+
+.mt-10 {
+    margin-top: 10%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+/*............ ANIMATION */
+/* ZOOM DE 10% */
+.card-person:hover .animate-zoom {
+    transform: scale(1.3);
+    transition: transform 2s ease-in-out;
+}
+.card-person {
+    position: relative;
+}
+
+.person-name {
+    visibility: hidden;
+    position: absolute;
+    bottom: -3.5em;
+    left: -2.2em;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(100, 85, 54, .3);
+    width: 70%;
+    height: 25%;
+    border: 1px solid rgba(100, 85, 54, .7);
+    padding-left: 4em;
+    padding-bottom: 2em;
+}
+
+.person-name div {
+    background-image: linear-gradient(to right, rgba(237, 222, 191, .7) 40%, rgba(137, 0, 8, .7) 60%);
+    border-radius: 4em;
+}
+
+.person-name div img[class='person-image'] {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    margin-left: -1em;
+    margin-top: -1em;
+}
+
+.person-name div p {
+   margin-left: 1em;
+}
+
+.person-name div p span {
+   filter: invert(6%) sepia(85%) saturate(5811%) hue-rotate(6deg) brightness(87%) contrast(109%);;
+}
+
+.card-person:hover .person-name {
+    visibility: visible;
+    animation-name: slide-top;
+    animation-duration: 3s;
+}
+
+@keyframes slide-top {
+    from {
+        opacity: 0;
+        transform: translateY(-4em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FADE IN */
+.fade-in-start {
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+.fade-in-right {
+    animation-name: fade-in-right;
+    animation-duration: 3s;
+}
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(3.125em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-4em); /* Décalage initial de -20px vers la gauche */
+    transition: opacity 3s ease, visibility 3s ease, transform 3s ease;
+}
+
+.fade-zoom {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease, visibility 3s ease, transform 3s ease;
+    transform: scale(0); /* Définit l'échelle initiale de 0 */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-3.125em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.show-zoom {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.message {
+    font-size: 1.5em;
+}
+
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}

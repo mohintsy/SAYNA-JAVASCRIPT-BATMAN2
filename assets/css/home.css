@@ -1,0 +1,427 @@
+/*----------------------------------
+    ..... STYLE SPECIFIC FOR HOME PAGE
+-----------------------------------------*/
+
+/*
+    ........ STYLE FOR SECTION INTRODUCTION
+*/
+body {
+    background-image: url('../images/illustrations/Bathome1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.introduction {
+    text-align: center;
+}
+
+.boutton-intro {
+    margin-top: 6.25vw;
+}
+
+.introduction p {
+    padding: 5.625vw 14.375vw 0 14.375vw;
+}
+
+.boutton-intro button, .part-5 button {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    width: 15.625vw;
+    border: none;
+    height: 3.75vw;
+}
+
+.boutton-intro button {
+    background-image: linear-gradient(to right, rgb(237, 222, 191) 40%, rgb(137, 0, 8) 60%);
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.part-5 button {
+    background-image: linear-gradient(to bottom right, rgb(237, 222, 191), rgb(137, 0, 8));
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.boutton-intro button:hover, .part-5 button:hover{
+    opacity: 1;
+}
+
+
+/*  
+    ....... STYLE FOR SECTION (BATMAN AU CINEMA, NEMESIS, ALLIES) 
+*/
+section[class='content'] {
+    padding: 5vw;
+    text-align: justify;
+}
+
+/* Title */
+section[class='content'] .text-1 {
+    padding-right: 6.375vw;
+    text-align: justify;
+}
+
+/* Content */
+section[class='content'] div {
+    display: inline-flex;
+    margin-top: 1.875vw;
+}
+
+section[class='content'] div div {
+    padding-right: 3.75vw;
+    text-align: right;
+}
+
+/* Image */
+section[class='content'] div div img {
+    width: 20vw;
+}
+
+section[class='content'] div div p {
+    text-align: center;
+    color: white;
+    font-size: 0.75em;
+    font-weight: bolder;
+}
+
+
+img[class="img-enemy"] {
+    width: 7.5vw;
+    height: 7.5vw;
+    margin-left: 17%;
+    margin-bottom: -13%;
+}
+
+/*
+    ........  STYLE FOR SECTION JUSTICE LEAGUE
+*/
+section[class='justice-league'] {
+    margin-top: 6.25em;
+}
+
+section[class='justice-league'] p, section[class='justice-league'] h1 {
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    text-align: justify;
+}
+
+section[class='justice-league'] div img {
+    margin-left: -20%;
+    width: calc(100vw + 10%);
+    height: auto;
+}
+
+img[class="img-alias"] {
+    float: right;
+    margin-top: -90vw;
+    margin-right: -15%;
+    width: 40vw;
+    height: 100%;
+}
+
+/* 
+    ........... STYLE FOR SECTION MULTIMEDIA 
+*/
+section[class='multimedia'] {
+    padding: 4vw;
+}
+
+.multi-content {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right, rgba(237, 222, 191, 0.3), rgba(25, 88, 125, 0.3));
+    background-color: transparent;
+    border-top-right-radius: 1.25em;
+    border-bottom-right-radius: 1.25em;
+    margin-left: 25%;
+    height: 16vw;
+    text-align: justify;
+}
+
+.multi-content div {
+    width: 26.875vw;
+    padding: 0.9375vw;
+}
+
+.multi-content div p {
+    margin-top: -3%;
+}
+
+.multi-content div h2 {
+    margin-top: -2%;
+}
+
+.multi-content img {
+    height: 16vw;
+}
+
+.arrow-left {
+   height: 4vw;
+   margin-top: 12.5%;
+}
+
+.arrow-right {
+    height: 4vw;
+    margin-left: 25%;
+    margin-top: 12.5%;
+}
+
+#multimedia video {
+    height: 40vw;
+}
+
+#multimedia:hover {
+    box-shadow: 0.5em 1em 2em 0.5em #333;
+}
+
+.video video {
+    width: 100%;
+    height: 20vw;
+}
+
+/* Icon  */
+.player-icon {
+  position: absolute;
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.player-icon:hover {
+    width: 30%;
+}
+
+/*
+    ....... STYLE FOR SECTION CONTACT 
+*/
+.contact {
+    margin: 0px -20%;
+    background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
+    background-color: transparent;
+    border: 1px solid rgba(70, 70, 70, 0.9);;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.formulaire-contact {
+    padding: 5% 25%;
+}
+
+.part-2, .part-4 {
+    padding-top: 5%;    
+}
+
+.part-3 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.part-5 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.part-3 button {
+    font-size: 1em;
+    padding: 1% 7%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(50, 100, 100);
+    cursor: pointer;
+}
+
+.part-3 button:hover {
+    background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
+}
+
+.ml-10 {
+    margin-left: 0.625vw;
+}
+
+.contact input[type='text'], .contact select {
+    height: 1.25vw;
+    margin-top: 0.625vw;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.contact input[type='text']:hover{
+    border-bottom: 0.125em solid white;
+}
+
+.contact input[type='text']:focus{
+    border-bottom: 0.1875em solid white;
+}
+
+.custom-select {
+    position: relative;
+    border-bottom: 1px solid white;
+}
+
+.custom-select select {
+    display: none; 
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 1.25vw;
+    right: 0.625vw;
+    width: 0;
+    height: 0;
+    border: 0.9375em solid transparent;
+    border-color: rgb(100, 100, 100) transparent transparent transparent;
+    background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
+}
+
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 2% 3%;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    font-size: 0.875em;
+    color: #aaa;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    color: #aaa;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.text-muted {
+    color: #888;
+    font-size: 0.875em;
+}
+
+/* 
+    ....... STYLE FOR SECTION CITATION 
+*/
+section[class='citation'] {
+    padding: 20% 10%;
+}
+
+section[class='citation'] .text {
+    text-align: center;
+    padding: 0%;
+    font-size: 1.125em;
+}
+
+section[class='citation'] .text .subtext {
+    font-size: 0.875em;
+    color: #888;
+}
+
+section[class='citation'] .close {
+    text-align: right;
+    margin-top: -5%;
+}
+
+.close {
+    text-align: right;
+}
+
+ul[id='dot-9'] {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 20%;
+    align-items: center;
+}
+
+ul[id='dot-9'] li[class='disc'] {
+    list-style-type: disc;
+}
+
+ul[id='dot-9'] li[class='circle'] {
+    list-style-type: circle;
+}
+
+ul[id='dot-9'] li {
+    color: #0033cc;
+}
+
+#wrapper-dot-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    .......... POPUP BOX 
+*/
+.popup-error, .popup-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
+    opacity: 0.99;
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
+    padding: 1.25vw;
+    border-radius: 0.3125em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
+    
+}
+
+.popup-error .popup-content {
+    top: 40%;
+}
+
+.popup-message .popup-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#close-popup {
+    margin-top: 1.25vw;
+}
+
+ul[id="message-error"] li {
+    list-style-type: none;
+    font-size: 0.875em;
+    text-align: left;
+    text-align: justify;
+    color: #ff0101;
+}
