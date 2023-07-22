@@ -61,8 +61,7 @@ body {
     opacity: 1;
 }
 
-/**
-....... GAME STYLE 
+/**git GAME STYLE 
  */
 .game .content-game .questions {
     height: 32vw;
@@ -111,7 +110,7 @@ body {
 }
 
 /**
- ......... POPUP STYLE
+ * || POPUP STYLE
  * */
  .popup-error, .popup-message {
     display: none;
