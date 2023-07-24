@@ -1,5 +1,5 @@
 /**
- SCROLL PROGRESSIVE
+ ------------- SCROLL PROGRESSIVE
   */
 // Récupération des boutons Batman
 const batmanUpButton = document.getElementById("batman-up-button");
@@ -34,7 +34,7 @@ batmanDownButton.addEventListener("click", () => {
 });
 
 /**
-APPARITION PROGRESSIVE WITH ANIMATION FADE IN 
+ ---------------- APPARITION PROGRESSIVE WITH ANIMATION FADE IN 
  */
 // Récupérez tous les éléments avec la classe "fade-slide"
 const fadeSlideElements = document.querySelectorAll('.fade-in');
@@ -96,7 +96,7 @@ window.addEventListener('scroll', handleScrollFadeZoom);
 handleScrollFadeZoom();
 
 /** 
-ANIMATION CANVAS
+ ---------- ANIMATION CANVAS
  */
 // Get the canvas context
 const canvas = document.getElementById("canvas");

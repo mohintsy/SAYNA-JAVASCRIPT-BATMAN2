@@ -108,7 +108,7 @@ fetch('https://batman-api.sayna.space/questions')
 });
 
 /**
- CREATE UTILS VARIABLES
+ * |CREATE UTILS VARIABLES
  */
 let progress = 0;
 let start = document.getElementById('start');
@@ -129,9 +129,7 @@ let restartQuiz = document.getElementById('restart-quiz');
 let btnStart = document.getElementById('btn-start');
 let btnNext = document.getElementById('btn-next');
 
-/**
- FUNCTION CHANGE THE CONTENT OF FOR EACH NEXT
- */
+
 function changeContent(game) {
 	// DELETE ALL PREVIOUS ELEMENTS
 	currentResponse = game.response;
@@ -164,7 +162,7 @@ function changeContent(game) {
 		input.setAttribute('type', 'checkbox');
 		input.setAttribute('name', game.response[i].text);
 		input.addEventListener('change', function(event) {
-  		event.stopPropagation(); 
+  		event.stopPropagation(); // Arrête la propagation de l'événement de la case à cocher
   		input.checked = !input.checked;
 		});
 		let span = document.createElement('span');
@@ -198,9 +196,7 @@ function changeContent(game) {
 	progress += 1;
 }
 
-/**
- START GAME
- */
+
 btnStart.addEventListener('click', ()=> {
 	if (gameData.length > 0){
 		changeContent(gameData[progress]);
@@ -209,9 +205,7 @@ btnStart.addEventListener('click', ()=> {
 	}
 });
 
-/**
-  IF USER GIVE WRONG ANSWER OR WIN GAME AND WANT TO RESTART ANOTHER PART
- */
+
 restartQuiz.addEventListener('click', ()=> {
 	// Hide pop up and show start
 	popupE.style.display = 'none';
@@ -222,18 +216,14 @@ restartQuiz.addEventListener('click', ()=> {
 	currentResponse = null;
 });
 
-/**
- SHOW POPUP IF USER GIVE WRONG ANSWER OR WIN THE GAME
- */
+
 function showPopup(t, m) {
 	popupE.style.display = 'block';
 	popupTitle.innerHTML = t;
 	popupMessage.innerHTML = m;
 }
 
-/**
- FUNCTION COMPARE THE USER RESPONSES AND RIGHT RESPONSE
- */
+
 function verifyAnswers(userResponse) {
 	let res = true;
 	for(let i=0; i<userResponse.length; i++) {
@@ -246,9 +236,7 @@ function verifyAnswers(userResponse) {
 }
 
 btnNext.addEventListener('click', next);
-/**
- FUNCTION NEXT
- */
+
 function next() {
 	// ADD USER RESPONSES TO ARRAY USERRESPONSES
 	const checkboxes = formRes.querySelectorAll('input[type="checkbox"]:checked');

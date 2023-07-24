@@ -16,13 +16,9 @@ for (i = 0; i < l; i++) {
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
   for (j = 1; j < ll; j++) {
-    /* For each option in the original select element,
-    create a new DIV that will act as an option item: */
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function(e) {
-        /* When an item is clicked, update the original select box,
-        and the selected item: */
         var y, i, k, s, h, sl, yl;
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         sl = s.length;
@@ -56,8 +52,7 @@ for (i = 0; i < l; i++) {
 }
 
 function closeAllSelect(elmnt) {
-  /* A function that will close all select boxes in the document,
-  except the current select box: */
+  
   var x, y, i, xl, yl, arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
@@ -77,6 +72,5 @@ function closeAllSelect(elmnt) {
   }
 }
 
-/* If the user clicks anywhere outside the select box,
-then close all select boxes: */
+
 document.addEventListener("click", closeAllSelect);

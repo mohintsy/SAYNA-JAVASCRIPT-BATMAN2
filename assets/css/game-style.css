@@ -1,9 +1,9 @@
 /*----------------------------------
-    ....... STYLE SPECIFIC FOR GAME PAGE
+   _______---------STYLE SPECIFIC FOR GAME PAGE
 -----------------------------------------*/
 
 /*
-    .....STYLE FOR SECTION INTRODUCTION
+    ______ --------STYLE FOR SECTION INTRODUCTION
 */
 body {
     background-image: url('../images/game/Batgame_1.png');
@@ -28,7 +28,7 @@ body {
 
 
 /*
-    ......STYLE FOR GAME SECTION
+    _________ --------- STYLE FOR GAME SECTION
 */
 .game {
     height: 50vw;
@@ -61,7 +61,8 @@ body {
     opacity: 1;
 }
 
-/*GAME STYLE 
+/**
+_____ -------- GAME STYLE 
  */
 .game .content-game .questions {
     height: 32vw;
@@ -110,7 +111,7 @@ body {
 }
 
 /**
- * || POPUP STYLE
+_______ POPUP STYLE
  * */
  .popup-error, .popup-message {
     display: none;

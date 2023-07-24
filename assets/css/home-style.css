@@ -1,10 +1,4 @@
-/*----------------------------------
-    ..... STYLE SPECIFIC FOR HOME PAGE
------------------------------------------*/
 
-/*
-    ........ STYLE FOR SECTION INTRODUCTION
-*/
 body {
     background-image: url('../images/illustrations/Bathome1.png');
     background-repeat: no-repeat;
@@ -50,21 +44,17 @@ body {
 }
 
 
-/*  
-    ....... STYLE FOR SECTION (BATMAN AU CINEMA, NEMESIS, ALLIES) 
-*/
+
 section[class='content'] {
     padding: 5vw;
     text-align: justify;
 }
 
-/* Title */
 section[class='content'] .text-1 {
     padding-right: 6.375vw;
     text-align: justify;
 }
 
-/* Content */
 section[class='content'] div {
     display: inline-flex;
     margin-top: 1.875vw;
@@ -75,7 +65,6 @@ section[class='content'] div div {
     text-align: right;
 }
 
-/* Image */
 section[class='content'] div div img {
     width: 20vw;
 }
@@ -95,9 +84,7 @@ img[class="img-enemy"] {
     margin-bottom: -13%;
 }
 
-/*
-    ........  STYLE FOR SECTION JUSTICE LEAGUE
-*/
+
 section[class='justice-league'] {
     margin-top: 6.25em;
 }
@@ -122,9 +109,7 @@ img[class="img-alias"] {
     height: 100%;
 }
 
-/* 
-    ........... STYLE FOR SECTION MULTIMEDIA 
-*/
+
 section[class='multimedia'] {
     padding: 4vw;
 }
@@ -182,7 +167,6 @@ section[class='multimedia'] {
     height: 20vw;
 }
 
-/* Icon  */
 .player-icon {
   position: absolute;
   width: 20%;
@@ -197,9 +181,7 @@ section[class='multimedia'] {
     width: 30%;
 }
 
-/*
-    ....... STYLE FOR SECTION CONTACT 
-*/
+
 .contact {
     margin: 0px -20%;
     background-image: linear-gradient(to bottom right, rgb(100, 85, 54), rgb(0, 50, 50));
@@ -295,7 +277,6 @@ section[class='multimedia'] {
     color: #aaa;
 }
 
-/* Style items (options): */
 .select-items {
     position: absolute;
     background-color: transparent;
@@ -316,14 +297,13 @@ section[class='multimedia'] {
 }
 
 
+
 .text-muted {
     color: #888;
     font-size: 0.875em;
 }
 
-/* 
-    ....... STYLE FOR SECTION CITATION 
-*/
+
 section[class='citation'] {
     padding: 20% 10%;
 }
@@ -374,9 +354,7 @@ ul[id='dot-9'] li {
     align-items: center;
 }
 
-/*
-    .......... POPUP BOX 
-*/
+
 .popup-error, .popup-message {
     display: none;
     position: fixed;
